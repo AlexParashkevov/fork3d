@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fork3d</title>
+  </head>
+  <body>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.753);
+      }
+
+      .canvas-contain {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+      }
+    </style>
+    <div class="canvas-contain">
+      <canvas class="webgl"></canvas>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.141.0/build/three.js"></script>
+    <script src="https://unpkg.com/three@0.141.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script type="module" src="./three.js" defer></script>
+  </body>
+</html>
